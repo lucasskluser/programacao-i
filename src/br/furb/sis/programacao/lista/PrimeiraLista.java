@@ -4,10 +4,12 @@ import java.util.Random;
 
 public class PrimeiraLista {
 
-    // Faça um programa que leia dois vetores de 10 posições de caracteres.
-    // A seguir, troque o 1º elemento do vetorA com o 10º do vetorB, o 2º do
-    // vetorA com o 9º do vetorB, assim por diante, até trocar o 10º do vetorA
-    // com o 1º do vetorB. Mostre os vetores antes e depois da troca.
+    /*
+     * Faça um programa que leia dois vetores de 10 posições de caracteres.
+     * A seguir, troque o 1º elemento do vetorA com o 10º do vetorB, o 2º do
+     * vetorA com o 9º do vetorB, assim por diante, até trocar o 10º do vetorA
+     * com o 1º do vetorB. Mostre os vetores antes e depois da troca.
+     */
     public static void cinco() {
         char[] vetorA = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'};
         char[] vetorB = {'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
@@ -48,34 +50,66 @@ public class PrimeiraLista {
         Random random = new Random();
         int maximo = random.nextInt((50 - (-50)) + 1) + (-50);
 
+        // Valor reservado para substituir números negativos
+        int negativo = 99;
+
         // Enquanto o tamanho máximo for negativo
-        while(maximo < 0) {
+        while (maximo < 0) {
             // Gera um novo tamanho aleatório
             maximo = random.nextInt((50 - (-50)) + 1) + (-50);
         }
 
-        // Define os vetores com o tamanho máximo aleatório
+        // Define o vetor com o tamanho máximo aleatório
         int[] numeros = new int[maximo];
-        int[] resultado = new int[maximo];
 
-        // Define o valor de cada elemento no vetor
-        for(int i = 0; i < numeros.length; i++) {
+        // variável para armazenar o número de elementos não negativos no vetor aleatório.
+        // Dessa forma, será possível gerar um vetor resultado com o tamanho necessário para
+        // armazenar os elementos não negativos.
+        int tamanhoResultado = 0;
+
+        // Define o valor de cada elemento no vetor aleatóriamente
+        for (int i = 0; i < numeros.length; i++) {
             numeros[i] = random.nextInt((50 - (-50)) + 1) + (-50);
         }
 
         // Exibe o vetor gerado
-        for(int numero : numeros) {
+        for (int numero : numeros) {
             System.out.print(String.format("%d, ", numero));
         }
 
-        int elemento;
-
-        for(int i = 0; i < numeros.length; i++) {
-            if(numeros[i] < 0) {
-                for(int j = i; j < ((numeros.length - 1) - i); j++) {
-                    numeros[]
-                }
+        // Percorre o vetor de números aleatórios
+        for (int i = 0; i < numeros.length; i++) {
+            // Se o numero[i] for menor que zero
+            if (numeros[i] < 0) {
+                // Substitui ele pelo valor da variável 'negativo'
+                numeros[i] = negativo;
+            // Se o numero[i] não for menor que zero
+            } else {
+                // Soma um no tamanhoResultado
+                tamanhoResultado++;
             }
+        }
+
+        // Declara um vetor com o tamanho definido pela variável 'tamanhoResultado'
+        int[] resultado = new int[tamanhoResultado];
+        // Variável que armazenará a posição no vetor resultado
+        int posicaoResultado = 0;
+
+        // Percorre o vetor de números aleatórios
+        for (int numero : numeros) {
+            // Se o 'numero' for mairo que zero e menor que 50
+            if (numero >= 0 && numero <= 50) {
+                // Salva ele na posição disponível no vetor 'resultado' e soma + 1 na 'posicaoResultado'
+                resultado[posicaoResultado++] = numero;
+            }
+        }
+
+        // Pula uma linha no console
+        System.out.println("");
+
+        // Exibe o vetor gerado
+        for (int numero : resultado) {
+            System.out.print(String.format("%d, ", numero));
         }
     }
 
@@ -86,16 +120,16 @@ public class PrimeiraLista {
         // Declara um vetor no tamanho do maior vetor + 1
         int[] result = new int[seq1.length + 1];
         boolean estouro = false; // Armazena o estouro da soma
-        for(int i = (seq1.length - 1); i >= 0; i--) {
+        for (int i = (seq1.length - 1); i >= 0; i--) {
             int soma = estouro ? seq1[i] + seq2[i] + 1 : seq1[i] + seq2[i];
             estouro = soma >= 10;
 
-            result[i+1] = soma % 10;
+            result[i + 1] = soma % 10;
         }
 
         result[0] = estouro ? 1 : 0;
 
-        for(int resultado : result) {
+        for (int resultado : result) {
             System.out.print(resultado + ", ");
         }
     }
