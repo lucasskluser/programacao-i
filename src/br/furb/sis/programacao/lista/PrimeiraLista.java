@@ -40,11 +40,13 @@ public class PrimeiraLista {
         }
     }
 
-    // Dado um vetor com MAX elementos, inicialize-o com números N inteiros
-    // aleatórios entre -50 e 50. O valor de N (N ≤ MAX)  também  deve  ser
-    // determinado  aleatoriamente.  Exiba  o  vetor  gerado  na  tela  e,
-    // em  seguida,  remova  do  vetor todos os valores negativos, fazendo os
-    // deslocamentos necessários no vetor. Exiba o vetor novamente após a operação.
+    /*
+     * Dado um vetor com MAX elementos, inicialize-o com números N inteiros
+     * aleatórios entre -50 e 50. O valor de N (N ≤ MAX)  também  deve  ser
+     * determinado  aleatoriamente.  Exiba  o  vetor  gerado  na  tela  e,
+     * em  seguida,  remova  do  vetor todos os valores negativos, fazendo os
+     * deslocamentos necessários no vetor. Exiba o vetor novamente após a operação.
+     */
     public static void seis() {
         // Gera o tamanho aleatório
         Random random = new Random();
@@ -110,6 +112,73 @@ public class PrimeiraLista {
         // Exibe o vetor gerado
         for (int numero : resultado) {
             System.out.print(String.format("%d, ", numero));
+        }
+    }
+
+    /*
+     * Dada uma seqüência de Nnúmeros reais, determinar os números que compõem a
+     * seqüência e a quantidadede vezes que cada um deles ocorre na mesma.
+     */
+    public static void sete() {
+        // Declara um vetor de números inteiros
+        double[] numeros = new double[]{-1.7, 3.0, 0.0, 1.5, 0.0, -1.7, 2.3, -1.7};
+
+        // Declara um vetor para armazenar o número inteiro de forma única
+        double[] numerosUnicos = new double[numeros.length];
+        // Declara um vetor para armazenar o número de vezes que o número inteiro se repete
+        int[] repeticaoNumeros = new int[numerosUnicos.length];
+
+        // Percorre o vetor de números inteiros
+        for(double numero : numeros) {
+
+            // Escreve o número no console
+            System.out.print(String.format("%.2f, ", numero));
+
+            // Declara uma variável lógica
+            // Essa variável ajudará a determinar se o número inteiro já está
+            // alocado no vetor de números únicos ou não
+            boolean contemNumero = false;
+
+            // Percorre o vetor de números únicos
+            for(int i = 0; i < numerosUnicos.length; i++) {
+                // Se o 'numero' for igual ao numerosUnicos[i]
+                if(numero == numerosUnicos[i]) {
+                    // Soma + 1 na repeticaoNumeros[i]
+                    repeticaoNumeros[i]++;
+                    // Define que o número já está no vetor de números únicos
+                    contemNumero = true;
+                    // Interrompe o loop
+                    break;
+                }
+            }
+
+            // Se o vetor de números únicos não contém o número inteiro
+            if(!contemNumero) {
+                // Percorre o vetor de números únicos
+                for(int i = 0; i < repeticaoNumeros.length; i++) {
+                    // Se a posição repeticaoNumeros[i] estiver vazia (= 0)
+                    if(repeticaoNumeros[i] == 0) {
+                        // Salva o número inteiro naquela posição
+                        numerosUnicos[i] = numero;
+                        // Soma um na repeticaoNumeros[i]
+                        repeticaoNumeros[i]++;
+                        // Interrompe o loop
+                        break;
+                    }
+                }
+            }
+        }
+
+        // Pula uma linha no console
+        System.out.println("");
+
+        // Percorre o vetor de números únicos
+        for(int i = 0; i < numerosUnicos.length; i++) {
+            // Se o repeticaoNumeros[i] for maior que zero
+            if(repeticaoNumeros[i] > 0) {
+                // Escreve o número inteiro e o número de repetições no console
+                System.out.println(String.format("%.1f ocorre %d vezes", numerosUnicos[i], repeticaoNumeros[i]));
+            }
         }
     }
 
