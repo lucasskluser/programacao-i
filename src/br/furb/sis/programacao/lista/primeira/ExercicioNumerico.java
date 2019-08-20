@@ -1,8 +1,8 @@
-package br.furb.sis.programacao.lista;
+package br.furb.sis.programacao.lista.primeira;
 
 import java.util.Random;
 
-public class PrimeiraLista {
+public class ExercicioNumerico {
 
     /*
      * Faça um programa que leia dois vetores de 10 posições de caracteres.
