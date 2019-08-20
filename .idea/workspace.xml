@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="78ac5ea8-6d7d-430d-bf99-3dea0c703b92" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Exercícios/META-INF/Exercícios.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Exercícios/br/furb/sis/programacao/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Exercícios/br/furb/sis/programacao/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Exercícios/br/furb/sis/programacao/lista/PrimeiraLista.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Exercícios/br/furb/sis/programacao/lista/PrimeiraLista.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/furb/sis/programacao/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/furb/sis/programacao/Main.java" afterDir="false" />
@@ -98,6 +99,8 @@
       <workItem from="1566174341167" duration="76000" />
       <workItem from="1566174509662" duration="32000" />
       <workItem from="1566175309732" duration="7283000" />
+      <workItem from="1566245371421" duration="384000" />
+      <workItem from="1566248945255" duration="973000" />
     </task>
     <servers />
   </component>
@@ -109,7 +112,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

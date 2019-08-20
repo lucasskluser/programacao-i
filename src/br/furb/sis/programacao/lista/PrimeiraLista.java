@@ -85,7 +85,7 @@ public class PrimeiraLista {
             if (numeros[i] < 0) {
                 // Substitui ele pelo valor da variável 'negativo'
                 numeros[i] = negativo;
-            // Se o numero[i] não for menor que zero
+                // Se o numero[i] não for menor que zero
             } else {
                 // Soma um no tamanhoResultado
                 tamanhoResultado++;
@@ -129,7 +129,7 @@ public class PrimeiraLista {
         int[] repeticaoNumeros = new int[numerosUnicos.length];
 
         // Percorre o vetor de números inteiros
-        for(double numero : numeros) {
+        for (double numero : numeros) {
 
             // Escreve o número no console
             System.out.print(String.format("%.2f, ", numero));
@@ -140,9 +140,9 @@ public class PrimeiraLista {
             boolean contemNumero = false;
 
             // Percorre o vetor de números únicos
-            for(int i = 0; i < numerosUnicos.length; i++) {
+            for (int i = 0; i < numerosUnicos.length; i++) {
                 // Se o 'numero' for igual ao numerosUnicos[i]
-                if(numero == numerosUnicos[i]) {
+                if (numero == numerosUnicos[i]) {
                     // Soma + 1 na repeticaoNumeros[i]
                     repeticaoNumeros[i]++;
                     // Define que o número já está no vetor de números únicos
@@ -153,11 +153,11 @@ public class PrimeiraLista {
             }
 
             // Se o vetor de números únicos não contém o número inteiro
-            if(!contemNumero) {
+            if (!contemNumero) {
                 // Percorre o vetor de números únicos
-                for(int i = 0; i < repeticaoNumeros.length; i++) {
+                for (int i = 0; i < repeticaoNumeros.length; i++) {
                     // Se a posição repeticaoNumeros[i] estiver vazia (= 0)
-                    if(repeticaoNumeros[i] == 0) {
+                    if (repeticaoNumeros[i] == 0) {
                         // Salva o número inteiro naquela posição
                         numerosUnicos[i] = numero;
                         // Soma um na repeticaoNumeros[i]
@@ -173,13 +173,48 @@ public class PrimeiraLista {
         System.out.println("");
 
         // Percorre o vetor de números únicos
-        for(int i = 0; i < numerosUnicos.length; i++) {
+        for (int i = 0; i < numerosUnicos.length; i++) {
             // Se o repeticaoNumeros[i] for maior que zero
-            if(repeticaoNumeros[i] > 0) {
+            if (repeticaoNumeros[i] > 0) {
                 // Escreve o número inteiro e o número de repetições no console
                 System.out.println(String.format("%.1f ocorre %d vezes", numerosUnicos[i], repeticaoNumeros[i]));
             }
         }
+    }
+
+    /*
+     * Vetores de caracteres podem ser utilizados para representar cadeias de DNA.
+     * Diz-se que uma dada sequência de DNA possui certo grau de similaridade de
+     * acordo com o número de bases que aparecem na mesma ordem. Implemente um
+     * programa que, dada duas sequências de DNA, calcule o grau de similaridade .
+     */
+    public static void oito() {
+        // Vetores de DNA
+        char[] sequenciaDNA1 = new char[]{'A', 'T', 'C', 'G', 'T', 'C'};
+        char[] sequenciaDNA2 = new char[]{'A', 'C', 'T', 'G', 'T', 'T'};
+
+        int similaridade = 0;
+
+        for (int i = 0; i < sequenciaDNA1.length; i++) {
+            if (sequenciaDNA1[i] == sequenciaDNA2[i]) {
+                similaridade++;
+            }
+        }
+
+        System.out.print("Sequencia 1: ");
+
+        for (char gene1 : sequenciaDNA1) {
+            System.out.printf("%s, ", gene1);
+        }
+
+        System.out.print("\nSequencia 2: ");
+
+        for (char gene2 : sequenciaDNA2) {
+            System.out.printf("%s, ", gene2);
+        }
+
+        System.out.printf("\nSimilaridade: %d", similaridade);
+
     }
 
     public static void dezessete() {
