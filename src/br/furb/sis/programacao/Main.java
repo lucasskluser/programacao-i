@@ -4,9 +4,9 @@ import br.furb.sis.programacao.lista.primeira.ExercicioNumerico;
 import br.furb.sis.programacao.lista.primeira.VetorInteiro;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         //ExercicioNumerico.oito();
-        int[] vetor = new int[]{-10, 9, 3, 45, -98, 302};
+        int[] vetor = new int[]{5, 6, 7, 8, -1};
         VetorInteiro vetorInteiro = new VetorInteiro(vetor);
 
         System.out.printf("Soma: %d\n", vetorInteiro.soma());

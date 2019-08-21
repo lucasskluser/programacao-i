@@ -53,8 +53,12 @@ public class VetorInteiro {
         return posicaoMenorElemento;
     }
 
-    public int elemento(int indice) {
-        return vetor[indice];
+    public int elemento(int indice) throws Exception {
+        try {
+            return vetor[indice - 1];
+        } catch (Exception e) {
+            throw new Exception(String.format("O elemento %d não existe", indice));
+        }
     }
 
     public boolean verificaSeExiste(int numero) {
