@@ -2,11 +2,30 @@ package br.furb.sis.programacao;
 
 import br.furb.sis.programacao.lista.primeira.ExercicioNumerico;
 import br.furb.sis.programacao.lista.primeira.VetorInteiro;
+import br.furb.sis.programacao.lista.primeira.VetorReais;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        ExercicioNumerico.dezesseis();
+        //ExercicioNumerico.dezesseis();
         //vetorInteiro();
+        //vetorReais();
+    }
+
+    private static void vetorReais() {
+        double[] vetorUm = new double[]{5.0, 6.3, 2.0, 4.7, 7.1, 1.0};
+        double[] vetorDois = new double[]{4.0, 5.3, 1.0, 3.7, 6.1, 0.0};
+
+        VetorReais vetorReaisUm = new VetorReais(vetorUm.length);
+        vetorReaisUm.defineVetor(vetorUm);
+
+        VetorReais vetorReaisDois = new VetorReais(vetorDois.length);
+        vetorReaisDois.defineVetor(vetorDois);
+
+        try {
+            System.out.println(vetorReaisUm.multiplicacao(vetorReaisDois));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     private static void vetorInteiro() throws Exception {
