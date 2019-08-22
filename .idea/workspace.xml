@@ -4,9 +4,9 @@
     <list default="true" id="78ac5ea8-6d7d-430d-bf99-3dea0c703b92" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Exercícios/br/furb/sis/programacao/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Exercícios/br/furb/sis/programacao/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercícios/br/furb/sis/programacao/lista/primeira/VetorInteiro.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Exercícios/br/furb/sis/programacao/lista/primeira/VetorInteiro.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Exercícios/br/furb/sis/programacao/lista/primeira/ExercicioNumerico.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Exercícios/br/furb/sis/programacao/lista/primeira/ExercicioNumerico.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/furb/sis/programacao/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/furb/sis/programacao/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/furb/sis/programacao/lista/primeira/VetorInteiro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/furb/sis/programacao/lista/primeira/VetorInteiro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/furb/sis/programacao/lista/primeira/ExercicioNumerico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/furb/sis/programacao/lista/primeira/ExercicioNumerico.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,6 +39,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -48,6 +49,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
   </component>
   <component name="RecentsManager">
@@ -100,6 +102,7 @@
       <workItem from="1566175309732" duration="7283000" />
       <workItem from="1566245371421" duration="384000" />
       <workItem from="1566248945255" duration="3871000" />
+      <workItem from="1566423898417" duration="6240000" />
     </task>
     <servers />
   </component>

@@ -5,7 +5,11 @@ import br.furb.sis.programacao.lista.primeira.VetorInteiro;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        //ExercicioNumerico.oito();
+        ExercicioNumerico.dezesseis();
+        //vetorInteiro();
+    }
+
+    private static void vetorInteiro() throws Exception {
         int[] vetor = new int[]{5, 6, 7, 8, -1};
         VetorInteiro vetorInteiro = new VetorInteiro(vetor);
 

@@ -14,7 +14,7 @@ public class ExercicioNumerico {
         char[] vetorA = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'};
         char[] vetorB = {'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
 
-        int indiceB = 9;
+        int indiceB = vetorB.length - 1;
 
         for (int i = 0; i < vetorA.length; i++) {
             char elementoA;
@@ -215,6 +215,49 @@ public class ExercicioNumerico {
 
         System.out.printf("\nSimilaridade: %d", similaridade);
 
+    }
+
+    /*
+     * Uma das formas de se enviar uma mensagem secreta é por meio de códigos
+     * matemáticos. Onde, tanto o destinatário quanto o remetente possuem um
+     * vetor chave C. O destinatário recebe do remetente um vetor M, tal que
+     * M+C = P, onde P é o vetor mensagem a ser decodificado. Cada número do
+     * P corresponde a uma letra do alfabeto: 1 = a, 2 = b, 3 = c,..., 23 = z
+     * (consideremos o alfabeto com 23 letras, excluindo as letras k, w e y e,
+     * o número zero corresponde ao espaço em branco).
+     *
+     * Com base nos conhecimentos e nas informações descritas, faça um programa
+     * que decodifique a mensagem secreta contida no vetor P, assinalando a
+     * alternativa que apresenta a mensagem que foi enviada. Por fim, mostre os
+     * valores do vetor M.
+     */
+    public static void dezesseis() {
+        char[] alfabeto = new char[]{' ', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'X', 'Z'};
+
+        int[] vetorC = new int[]{1, 1, 0, 1, 0, -1, 0, 0, 2};
+        int[] vetorP = new int[]{2, -10, 1, 0, 18, 37, 17, 19, 5};
+        int[] vetorM = new int[vetorC.length];
+
+        String mensagem = "";
+
+        for(int i = 0; i < vetorC.length; i++) {
+            vetorM[i] = vetorP[i] - vetorC[i];
+
+            int posicao = vetorP[i] % (alfabeto.length - 1);
+            posicao = posicao < 0 ? alfabeto.length + posicao : posicao;
+
+            System.out.printf("%d ", posicao);
+
+            mensagem += alfabeto[posicao];
+        }
+
+        System.out.println(mensagem);
+
+        System.out.print("Vetor M: ");
+
+        for(int elemento : vetorM) {
+            System.out.printf("%d, ", elemento);
+        }
     }
 
     public static void dezessete() {
