@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78ac5ea8-6d7d-430d-bf99-3dea0c703b92" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/br/furb/sis/programacao/lista/primeira/VetorReais.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Exercícios/br/furb/sis/programacao/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Exercícios/br/furb/sis/programacao/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercícios/br/furb/sis/programacao/lista/primeira/ExercicioNumerico.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Exercícios/br/furb/sis/programacao/lista/primeira/ExercicioNumerico.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Exercícios/br/furb/sis/programacao/lista/primeira/VetorReais.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Exercícios/br/furb/sis/programacao/lista/primeira/VetorReais.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/furb/sis/programacao/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/furb/sis/programacao/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/furb/sis/programacao/lista/primeira/ExercicioNumerico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/furb/sis/programacao/lista/primeira/ExercicioNumerico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/furb/sis/programacao/lista/primeira/VetorReais.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/furb/sis/programacao/lista/primeira/VetorReais.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -104,7 +103,7 @@
       <workItem from="1566245371421" duration="384000" />
       <workItem from="1566248945255" duration="3871000" />
       <workItem from="1566423898417" duration="6240000" />
-      <workItem from="1566495369996" duration="5265000" />
+      <workItem from="1566495369996" duration="6217000" />
     </task>
     <servers />
   </component>
@@ -123,21 +122,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/br/furb/sis/programacao/lista/primeira/VetorReais.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/br/furb/sis/programacao/lista/primeira/VetorReais.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

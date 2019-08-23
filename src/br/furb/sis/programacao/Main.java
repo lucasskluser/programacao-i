@@ -6,14 +6,14 @@ import br.furb.sis.programacao.lista.primeira.VetorReais;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        //ExercicioNumerico.dezesseis();
+        ExercicioNumerico.dezesseis();
         //vetorInteiro();
         //vetorReais();
     }
 
     private static void vetorReais() {
-        double[] vetorUm = new double[]{5.0, 6.3, 2.0, 4.7, 7.1, 1.0};
-        double[] vetorDois = new double[]{4.0, 5.3, 1.0, 3.7, 6.1, 0.0};
+        double[] vetorUm = new double[]{3.0, 4.0, 7.0, 9.0, 2.0};
+        double[] vetorDois = new double[]{5.0, 5.0, 7.0, 3.0, 8.0};
 
         VetorReais vetorReaisUm = new VetorReais(vetorUm.length);
         vetorReaisUm.defineVetor(vetorUm);
@@ -22,10 +22,16 @@ public class Main {
         vetorReaisDois.defineVetor(vetorDois);
 
         try {
-            System.out.println(vetorReaisUm.multiplicacao(vetorReaisDois));
+            System.out.println(vetorReaisUm.multiplicacao(vetorReaisUm));
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+        //vetorReaisUm.inverteVetor();
+
+        /*for(double elemento : vetorReaisUm.retornaVetor()) {
+            System.out.printf("%.2f, ", elemento);
+        }*/
     }
 
     private static void vetorInteiro() throws Exception {

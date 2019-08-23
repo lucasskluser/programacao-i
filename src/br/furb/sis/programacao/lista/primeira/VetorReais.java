@@ -42,4 +42,30 @@ public class VetorReais {
 
         return multiplicacao;
     }
+
+    public VetorReais novoObjeto(VetorReais obj) throws Exception {
+        VetorReais novoObjeto = new VetorReais(this.vetor.length);
+
+        if(this.vetor.length != obj.vetor.length) {
+            throw new Exception("Os vetores devem ter o mesmo tamanho!");
+        }
+
+        for(int i = 0; i < this.vetor.length; i++) {
+            novoObjeto.vetor[i] = (this.vetor[i] / obj.vetor[i]);
+        }
+
+        return novoObjeto;
+    }
+
+    public void inverteVetor() {
+        double[] aux = vetor;
+
+        for(int i = 0, j = vetor.length - 1; i < vetor.length; i++, j--) {
+            vetor[i] = aux[j];
+        }
+    }
+
+    public double[] retornaVetor() {
+        return this.vetor;
+    }
 }
