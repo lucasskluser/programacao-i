@@ -1,4 +1,4 @@
-package br.furb.sis.programacao.lista.primeira;
+package br.furb.sis.programacao.lista.vetor.primeira;
 
 import java.util.Random;
 
@@ -272,7 +272,6 @@ public class ExercicioNumerico {
             System.out.printf("%d, ", elemento);
         }
     }
-
     public static void dezessete() {
         int[] seq1 = {8, 2, 4, 3, 4, 2, 5, 1};
         int[] seq2 = {2, 1, 9, 5, 2, 3, 6, 7};

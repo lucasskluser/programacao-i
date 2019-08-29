@@ -1,12 +1,18 @@
 package br.furb.sis.programacao;
 
-import br.furb.sis.programacao.lista.primeira.ExercicioNumerico;
-import br.furb.sis.programacao.lista.primeira.VetorInteiro;
-import br.furb.sis.programacao.lista.primeira.VetorReais;
+import br.furb.sis.programacao.lista.matriz.primeira.ExercicioNumerico;
+import br.furb.sis.programacao.lista.vetor.primeira.VetorInteiro;
+import br.furb.sis.programacao.lista.vetor.primeira.VetorReais;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        ExercicioNumerico.dezesseis();
+        //ExercicioNumerico.dezesseis();
+        int[][] matriz = new int[][] {
+          new int[]{11, 15, 9, 5},
+          new int[]{3, 8, 4, 13}
+        };
+
+        ExercicioNumerico.seis(matriz);
         //vetorInteiro();
         //vetorReais();
     }

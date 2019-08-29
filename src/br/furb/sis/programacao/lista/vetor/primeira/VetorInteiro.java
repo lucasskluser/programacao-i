@@ -1,4 +1,4 @@
-package br.furb.sis.programacao.lista.primeira;
+package br.furb.sis.programacao.lista.vetor.primeira;
 /*
  * Crie uma classe chamada VetorInteiros, que internamente
  * possui um vetor de 5 inteiros (int). Implemente métodos
