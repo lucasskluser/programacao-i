@@ -9,6 +9,9 @@ public class Retangulo {
      * dos quatro pontos extremos de um retângulo, que são definidos
      * no sentido anti-horário, partindo do ponto extremo
      * superior-esquerdo
+     * A |-------| D
+     *   |       |
+     * B |-------| C
      */
     // Ponto superior-esquerdo
     private Ponto pontoA;
@@ -180,7 +183,7 @@ public class Retangulo {
      */
     public Retangulo calculaIntersecao(Retangulo outroRetangulo) throws Exception {
         // O ponto inicial da interseção será o ponto A do outro retângulo
-        Ponto pontoIntersecaoInicial = new Ponto(outroRetangulo.pontoA.getX(), outroRetangulo.pontoA.getY());
+        Ponto pontoIntersecaoInicial = outroRetangulo.pontoA;
         // O ponto final da interseção terá o X do outro retângulo e o Y do retângulo atual
         Ponto pontoIntersecaoFinal = new Ponto(
                 outroRetangulo.getPontoC().getX(),
