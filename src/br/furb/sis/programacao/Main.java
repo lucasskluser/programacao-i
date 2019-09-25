@@ -1,20 +1,31 @@
 package br.furb.sis.programacao;
 
-import br.furb.sis.programacao.lista.matriz.primeira.ExercicioNumerico;
+import br.furb.sis.programacao.lista.orientacao.primeira.exercicio_nove.Retangulo;
+import br.furb.sis.programacao.lista.orientacao.primeira.exercicio_sete.Ponto;
 import br.furb.sis.programacao.lista.vetor.primeira.VetorInteiro;
 import br.furb.sis.programacao.lista.vetor.primeira.VetorReais;
 
 public class Main {
-    public static void main(String[] args) throws Exception {
-        //ExercicioNumerico.dezesseis();
-        int[][] matriz = new int[][] {
-          new int[]{11, 15, 9, 5},
-          new int[]{3, 8, 4, 13}
-        };
+    public static void main(String[] args) {
+        try {
+            Ponto pontoInicialRetanguloUm = new Ponto(1, 4);
+            Ponto pontoFinalRetanguloUm = new Ponto(5, 0);
+            Retangulo retanguloUm = new Retangulo(pontoInicialRetanguloUm, pontoFinalRetanguloUm);
+            System.out.println("Retângulo um:");
+            System.out.println(retanguloUm.obtemPosicoes());
 
-        ExercicioNumerico.seis(matriz);
-        //vetorInteiro();
-        //vetorReais();
+            Ponto pontoInicialRetanguloDois = new Ponto(3, 3);
+            Ponto pontoFinalRetanguloDois = new Ponto(4, -1);
+            Retangulo retanguloDois = new Retangulo(pontoInicialRetanguloDois, pontoFinalRetanguloDois);
+            System.out.println("\nRetângulo dois:");
+            System.out.println(retanguloDois.obtemPosicoes());
+
+            Retangulo intersecao = retanguloUm.calculaIntersecao(retanguloDois);
+            System.out.println("\nInterseção:");
+            System.out.println(intersecao.obtemPosicoes());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     private static void vetorReais() {

@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78ac5ea8-6d7d-430d-bf99-3dea0c703b92" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/br/furb/sis/programacao/lista/matriz/primeira/ExercicioNumerico.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/furb/sis/programacao/lista/orientacao/primeira/exercicio_nove/Retangulo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/furb/sis/programacao/lista/orientacao/primeira/exercicio_sete/Ponto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/furb/sis/programacao/lista/orientacao/primeira/exercicio_sete/Principal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Exercícios/META-INF/Exercícios.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Exercícios/br/furb/sis/programacao/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Exercícios/br/furb/sis/programacao/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercícios/br/furb/sis/programacao/lista/primeira/ExercicioNumerico.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercícios/br/furb/sis/programacao/lista/primeira/VetorInteiro.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Exercícios/br/furb/sis/programacao/lista/primeira/VetorReais.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/furb/sis/programacao/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/furb/sis/programacao/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/furb/sis/programacao/lista/primeira/ExercicioNumerico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/furb/sis/programacao/lista/vetor/primeira/ExercicioNumerico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/furb/sis/programacao/lista/primeira/VetorInteiro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/furb/sis/programacao/lista/vetor/primeira/VetorInteiro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/furb/sis/programacao/lista/primeira/VetorReais.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/furb/sis/programacao/lista/vetor/primeira/VetorReais.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -111,6 +108,11 @@
       <workItem from="1566495369996" duration="6776000" />
       <workItem from="1567030114879" duration="907000" />
       <workItem from="1567031507943" duration="2264000" />
+      <workItem from="1568242419412" duration="2920000" />
+      <workItem from="1568680777255" duration="58000" />
+      <workItem from="1569370047029" duration="23000" />
+      <workItem from="1569370104662" duration="142000" />
+      <workItem from="1569370951586" duration="9977000" />
     </task>
     <servers />
   </component>
