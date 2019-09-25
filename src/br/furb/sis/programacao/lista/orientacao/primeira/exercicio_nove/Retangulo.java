@@ -1,5 +1,6 @@
 package br.furb.sis.programacao.lista.orientacao.primeira.exercicio_nove;
 
+import br.furb.sis.programacao.lista.orientacao.primeira.exercicio_dezessete.Linha;
 import br.furb.sis.programacao.lista.orientacao.primeira.exercicio_sete.Ponto;
 
 public class Retangulo {
@@ -29,7 +30,7 @@ public class Retangulo {
      * lançará uma exceção.
      */
     public Retangulo(Ponto pontoInicial, Ponto pontoFinal) throws Exception {
-        if((pontoInicial.getX() == pontoFinal.getX()) || pontoInicial.getY() == pontoFinal.getY()) {
+        if ((pontoInicial.getX() == pontoFinal.getX()) || pontoInicial.getY() == pontoFinal.getY()) {
             throw new Exception("Os pontos inicial e final devem ser opostos");
         }
 
@@ -103,9 +104,9 @@ public class Retangulo {
      */
     private void calculaPontos(Ponto pontoInicial, Ponto pontoFinal) {
         // Se o ponto inicial estiver à esquerda do ponto final
-        if(pontoInicial.getX() < pontoFinal.getX()) {
+        if (pontoInicial.getX() < pontoFinal.getX()) {
             // Se o ponto inicial estiver acima do ponto final
-            if(pontoInicial.getY() > pontoFinal.getY()) {
+            if (pontoInicial.getY() > pontoFinal.getY()) {
                 // O ponto A será o ponto inicial
                 setPontoA(pontoInicial);
                 // O ponto B será um novo ponto com o X igual ao ponto inicial e o Y igual ao ponto final
@@ -114,7 +115,7 @@ public class Retangulo {
                 setPontoC(pontoFinal);
                 // O ponto D será um novo ponto com o X igual ao ponto final e o Y igual ao ponto inicial
                 setPontoD(new Ponto(pontoFinal.getX(), pontoInicial.getY()));
-            // Se o ponto inicial estiver abaixo do ponto final
+                // Se o ponto inicial estiver abaixo do ponto final
             } else {
                 // O ponto A será um novo ponto com o X igual ao ponto inicial e o Y igual ao ponto final
                 setPontoA(new Ponto(pontoInicial.getX(), pontoFinal.getY()));
@@ -125,10 +126,10 @@ public class Retangulo {
                 // O ponto D será o ponto final
                 setPontoD(pontoFinal);
             }
-        // Se o ponto inicial estiver à direita do ponto final
+            // Se o ponto inicial estiver à direita do ponto final
         } else {
             // Se o ponto inicial estiver acima do ponto final
-            if(pontoInicial.getY() > pontoFinal.getY()) {
+            if (pontoInicial.getY() > pontoFinal.getY()) {
                 // O ponto A será um novo ponto com o X igual o ponto final e o Y igual ao ponto inicial
                 setPontoA(new Ponto(pontoFinal.getX(), pontoInicial.getY()));
                 // O ponto B será o ponto final
@@ -137,7 +138,7 @@ public class Retangulo {
                 setPontoC(new Ponto(pontoInicial.getX(), pontoFinal.getY()));
                 // O ponto D será o ponto inicial
                 setPontoD(pontoInicial);
-            // Se o ponto inicial estiver abaixo do ponto final
+                // Se o ponto inicial estiver abaixo do ponto final
             } else {
                 // O ponto A será o ponto final
                 setPontoA(pontoFinal);
@@ -188,5 +189,47 @@ public class Retangulo {
 
         // A interseção terá os demais pontos calculados no construtor da classe
         return new Retangulo(pontoIntersecaoInicial, pontoIntersecaoFinal);
+    }
+
+    /*
+     * Método responsável por validar se determinado ponto está
+     * dentro do objeto retângulo.
+     *
+     * Para validar se o ponto está dentro do retângulo, as
+     * coordenadas X e Y do ponto são comparadas com as coordenadas
+     * do ponto B e D do retângulo (extremo inferior-esquerdo e
+     * superior-direito).
+     */
+    public boolean estaDentro(Ponto ponto) {
+        return (
+                (ponto.getX() < this.getPontoD().getX()) && (ponto.getY() < this.getPontoD().getY())
+        ) && (
+                (ponto.getX() > this.getPontoB().getX()) && (ponto.getY() > this.getPontoB().getY())
+        );
+    }
+
+    /*
+     * Método responsável por validar se determinada linha está
+     * dentro do objeto retângulo.
+     *
+     * Para validar se a linha está dentro do retângulo, as
+     * coordenadas X e Y dos pontos A e B da linha são comparadas com
+     * as coordenadas do ponto B e D do retângulo (extremo
+     * inferior-esquerdo e superior-direito).
+     */
+    public boolean estaDentro(Linha linha) {
+        boolean pontoADentro = (
+                (linha.getPontoA().getX() < this.getPontoD().getX()) && (linha.getPontoA().getY() < this.getPontoD().getY())
+        ) && (
+                (linha.getPontoA().getX() > this.getPontoB().getX()) && (linha.getPontoA().getY() > this.getPontoB().getY())
+        );
+
+        boolean pontoBDentro = (
+                (linha.getPontoB().getX() < this.getPontoD().getX()) && (linha.getPontoB().getY() < this.getPontoD().getY())
+        ) && (
+                (linha.getPontoB().getX() > this.getPontoB().getX()) && (linha.getPontoB().getY() > this.getPontoB().getY())
+        );
+
+        return pontoADentro && pontoBDentro;
     }
 }
