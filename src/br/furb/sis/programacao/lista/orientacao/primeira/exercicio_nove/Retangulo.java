@@ -174,7 +174,7 @@ public class Retangulo {
      * nos dois retângulos que estão sendo comparados.
      *
      * Com isso, um novo retângulo é instanciado, passando os pontos
-     * inicial e final calculados. Com isso, o método calculaPontos()
+     * inicial e final calculados. Dessa forma, o método calculaPontos()
      * define os pontos da interseção.
      */
     public Retangulo calculaIntersecao(Retangulo outroRetangulo) throws Exception {
