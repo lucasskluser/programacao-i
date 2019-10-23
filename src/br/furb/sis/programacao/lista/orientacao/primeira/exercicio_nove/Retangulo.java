@@ -2,6 +2,7 @@ package br.furb.sis.programacao.lista.orientacao.primeira.exercicio_nove;
 
 import br.furb.sis.programacao.lista.orientacao.primeira.exercicio_dezessete.Linha;
 import br.furb.sis.programacao.lista.orientacao.primeira.exercicio_sete.Ponto;
+import org.jetbrains.annotations.NotNull;
 
 public class Retangulo {
     /*
@@ -32,7 +33,7 @@ public class Retangulo {
      * Caso os pontos inicial e final não sejam opostos, o método
      * lançará uma exceção.
      */
-    public Retangulo(Ponto pontoInicial, Ponto pontoFinal) throws Exception {
+    public Retangulo(@NotNull Ponto pontoInicial, @NotNull Ponto pontoFinal) throws Exception {
         if ((pontoInicial.getX() == pontoFinal.getX()) || pontoInicial.getY() == pontoFinal.getY()) {
             throw new Exception("Os pontos inicial e final devem ser opostos");
         }

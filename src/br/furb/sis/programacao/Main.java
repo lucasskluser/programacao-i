@@ -1,15 +1,19 @@
 package br.furb.sis.programacao;
 
+import br.furb.sis.programacao.lista.matriz.primeira.exercicio_doze.Doze;
 import br.furb.sis.programacao.lista.orientacao.primeira.exercicio_dezessete.Linha;
+import br.furb.sis.programacao.lista.orientacao.primeira.exercicio_doze.PrincipalApolice;
 import br.furb.sis.programacao.lista.orientacao.primeira.exercicio_nove.Retangulo;
 import br.furb.sis.programacao.lista.orientacao.primeira.exercicio_sete.Ponto;
+import br.furb.sis.programacao.lista.vetor.primeira.ExercicioNumerico;
 import br.furb.sis.programacao.lista.vetor.primeira.VetorInteiro;
 import br.furb.sis.programacao.lista.vetor.primeira.VetorReais;
 
 public class Main {
     public static void main(String[] args) {
         try {
-            exercicioRetangulo();
+            //PrincipalApolice.main();
+            ExercicioNumerico.sete();
         } catch (Exception e) {
             e.printStackTrace();
         }
