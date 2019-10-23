@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public class ExemploHash {
 
-    public static main() {
+    public static void main() {
         HashMap<String, String> pessoas = new HashMap<String, String>();
 
         pessoas.put("123", "Joao");
@@ -13,5 +13,7 @@ public class ExemploHash {
         pessoas.put("035", "Marta");
         pessoas.put("157", "Mateus");
         pessoas.put("359", "Madalena");
+
+        System.out.println(pessoas.get("123"));
     }
 }
