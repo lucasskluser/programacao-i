@@ -12,8 +12,7 @@ import br.furb.sis.programacao.lista.vetor.primeira.VetorReais;
 public class Main {
     public static void main(String[] args) {
         try {
-            //PrincipalApolice.main();
-            ExercicioNumerico.sete();
+            
         } catch (Exception e) {
             e.printStackTrace();
         }

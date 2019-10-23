@@ -1,0 +1,18 @@
+# Editors configs
+.vscode/
+.idea
+_config.yml
+Exercícios.iml
+
+# Java out files
+out
+
+# Outsource files
+pdf
+
+# Backup files/directory
+.idea-backup
+pdf-backup
+out-backup
+_config.yml-backup
+Exercícios.iml-backup
