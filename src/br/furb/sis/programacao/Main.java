@@ -1,11 +1,11 @@
 package br.furb.sis.programacao;
 
-import br.furb.sis.programacao.sala.ExemploHash;
+import br.furb.sis.programacao.lista.hashmap.primeira.TestePessoa;
 
 public class Main {
     public static void main(String[] args) {
         try {
-            ExemploHash.main();
+            TestePessoa.main();
         } catch (Exception e) {
             e.printStackTrace();
         }
