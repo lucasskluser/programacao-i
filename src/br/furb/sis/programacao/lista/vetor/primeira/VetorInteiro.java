@@ -12,7 +12,7 @@ package br.furb.sis.programacao.lista.vetor.primeira;
  */
 public class VetorInteiro {
     private int[] vetor;
-
+    
     public VetorInteiro(int[] vetor) {
         this.vetor = vetor;
     }
